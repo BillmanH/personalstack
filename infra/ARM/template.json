@@ -1,0 +1,95 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "rootName": {
+            "defaultValue": "personal",
+            "type": "String"
+        },
+        "tags": {
+            "defaultValue": {},
+            "type": "object"
+        },
+        "storageAccounts_name": {
+            "type": "String"
+        },
+        "adt-name": {
+            "type": "String"
+        },
+        "adt-principalId": {
+            "type": "String"
+        },
+        "adt-roleDefinitionId": {
+            "type": "String"
+        },
+        "region": {
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2021-09-01",
+            "name": "[concat(parameters('rootName'), parameters('storageAccounts_name'))]",
+            "location": "westus",
+            "tags": "[parameters('tags')]",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "StorageV2",
+            "properties": {
+                "minimumTlsVersion": "TLS1_0",
+                "allowBlobPublicAccess": true,
+                "networkAcls": {
+                    "bypass": "AzureServices",
+                    "virtualNetworkRules": [],
+                    "ipRules": [],
+                    "defaultAction": "Allow"
+                },
+                "supportsHttpsTrafficOnly": false,
+                "encryption": {
+                    "services": {
+                        "file": {
+                            "keyType": "Account",
+                            "enabled": true
+                        },
+                        "blob": {
+                            "keyType": "Account",
+                            "enabled": true
+                        }
+                    },
+                    "keySource": "Microsoft.Storage"
+                },
+                "accessTier": "Hot"
+            }
+        },
+        {
+            "apiVersion": "2021-06-30-preview",
+            "name": "[concat(parameters('rootName'), parameters('adt-name'))]",
+            "location": "[parameters('region')]",
+            "tags": "[parameters('tags')]",
+            "type": "Microsoft.DigitalTwins/digitalTwinsInstances",
+            "sku": {
+                "name": "S1"
+            },
+            "identity": {
+                "type": "SystemAssigned"
+            }
+        },
+        {
+            "apiVersion": "2020-04-01-preview",
+            "name": "[concat(parameters('rootName'), parameters('adt-name'), '/Microsoft.Authorization/', guid(uniqueString(parameters('adt-name'))))]",
+            "type": "Microsoft.DigitalTwins/digitalTwinsInstances/providers/roleAssignments",
+            "dependsOn": [
+                "[concat(parameters('rootName'), parameters('adt-name'))]"
+            ],
+            "properties": {
+                "roleDefinitionId": "[parameters('adt-roleDefinitionId')]",
+                "principalId": "[parameters('adt-principalId')]",
+                "principalType": "User"
+            }
+        }
+    ]
+}
