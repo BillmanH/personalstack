@@ -18,5 +18,5 @@ foreach($v in $json.PSObject.Properties)
     }
 }
 
-Write-Host "confirm keys set propperly with:"
+Write-Host "you can confirm keys set propperly with:"
 Write-Host "conda env config vars list"

@@ -10,9 +10,6 @@
             "defaultValue": {},
             "type": "object"
         },
-        "storageAccounts_name": {
-            "type": "String"
-        },
         "adt-name": {
             "type": "String"
         },
@@ -28,43 +25,6 @@
     },
     "variables": {},
     "resources": [
-        {
-            "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "2021-09-01",
-            "name": "[concat(parameters('rootName'), parameters('storageAccounts_name'))]",
-            "location": "westus",
-            "tags": "[parameters('tags')]",
-            "sku": {
-                "name": "Standard_LRS",
-                "tier": "Standard"
-            },
-            "kind": "StorageV2",
-            "properties": {
-                "minimumTlsVersion": "TLS1_0",
-                "allowBlobPublicAccess": true,
-                "networkAcls": {
-                    "bypass": "AzureServices",
-                    "virtualNetworkRules": [],
-                    "ipRules": [],
-                    "defaultAction": "Allow"
-                },
-                "supportsHttpsTrafficOnly": false,
-                "encryption": {
-                    "services": {
-                        "file": {
-                            "keyType": "Account",
-                            "enabled": true
-                        },
-                        "blob": {
-                            "keyType": "Account",
-                            "enabled": true
-                        }
-                    },
-                    "keySource": "Microsoft.Storage"
-                },
-                "accessTier": "Hot"
-            }
-        },
         {
             "apiVersion": "2021-06-30-preview",
             "name": "[concat(parameters('rootName'), parameters('adt-name'))]",
