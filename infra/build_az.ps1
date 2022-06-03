@@ -18,8 +18,3 @@ cd $Env:abspath
 # *_parameters are in the .gitignore 
 # Single turnkey resources from template. 
 az deployment group create --resource-group $resourceGroupName --template-file "infra/ARM/template.json" --parameters "infra/ARM/parameters.json"
-
-
-# Creating the azure functions separately until I get it figured out. 
-az deployment group create --resource-group $resourceGroupName --template-file "infra/ARM/template_func.json" --parameters "infra/ARM/parameters_func.json"
-

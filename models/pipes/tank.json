@@ -1,0 +1,56 @@
+{
+    "@id": "dtmi:billmanh:tank;1",
+    "@type": "Interface",
+    "displayName": "Tank",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "diameter",
+            "displayName": "diameter (cm)",
+            "schema": "double",
+            "comment": "diameter at center of the tank in centimeters"
+        },
+        {
+            "@type": "Property",
+            "name": "long",
+            "displayName": "logitude",
+            "schema": "double",
+            "comment": "longitude of the place where item is located"
+        },
+        {
+            "@type": "Property",
+            "name": "model_no",
+            "displayName": "Model No.",
+            "schema": "string",
+            "comment": "model number of the equempent"
+        },
+        {
+            "@type": "Manufacturer",
+            "name": "ticket_location",
+            "displayName": "ticket location",
+            "schema": "string",
+            "comment": "location of the seat, for demonstration this is just a number"
+        },
+        {
+            "@type": "Property",
+            "name": "state",
+            "displayName": "state",
+            "schema": "string",
+            "comment": "current state of the ticket"
+        },
+        {
+            "@type": "Relationship",
+            "name": "ownedBy",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "bought_online",
+                    "schema": "boolean"
+                }
+            ]
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "A number of tickets are placed into ADT before purchase with the initial state: open",
+    "description": "an abstract ticket"
+}
