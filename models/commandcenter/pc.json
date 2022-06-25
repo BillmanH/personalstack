@@ -1,0 +1,28 @@
+{
+    "@id": "dtmi:billmanh:pc;1",
+    "@type": "Interface",
+    "displayName": "Computer",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "name",
+            "displayName": "Computer Name",
+            "schema": "string",
+            "comment": "the name of the computer"
+        },
+        {
+            "@type": "Property",
+            "name": "os",
+            "displayName": "OS",
+            "schema": "string",
+            "comment": "operating system"
+        },
+        {
+            "@type": "Relationship",
+            "name": "isOn"
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "",
+    "description": "Computer. Single device. Not a phone or tablet."
+}

@@ -1,0 +1,38 @@
+{
+    "@id": "dtmi:billmanh:desk;1",
+    "@type": "Interface",
+    "displayName": "Desk",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "name",
+            "displayName": "Name",
+            "schema": "string",
+            "comment": "name of the desk"
+        },
+        {
+            "@type": "Property",
+            "name": "model",
+            "displayName": "Model",
+            "schema": "string",
+            "comment": "model"
+        },
+        {
+            "@type": "Property",
+            "name": "manufacturer",
+            "displayName": "Manufacturer",
+            "schema": "string",
+            "comment": "company that makes it"
+        },
+        {
+            "@type": "Property",
+            "name": "height",
+            "displayName": "height",
+            "schema": "double",
+            "comment": "height in inches (standing desk)"
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "A number of tickets are placed into ADT before purchase with the initial state: open",
+    "description": "an abstract ticket"
+}
