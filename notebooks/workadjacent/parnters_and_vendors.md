@@ -1,5 +1,5 @@
 # Partner Ecosystems
-_When you loose control of your data, you loose control of the pace and timing of inovation._
+_When you lose control of your data, you lose control of the pace and timing of inovation._
 ## How to assess the fitness of a 3rd party vendor for your enterprise data solution.
 
 I'm often brougt into meetings to chat with and explore bringing a new 3rd party vendor into an enterprise data system. As a Azure Architect and Data Analyst with more than 10 years in the industry, I have a lot of hands-on experience building and integrating platforms into a production-ready data platform. Partners, the right ones, offer a lot to an enterpise in terms of excelerating digital transformation and enabling analysts. The wrong ones create silos while tying up you enterprise IT budget. 
@@ -31,11 +31,11 @@ Vendors solve every kind of data infrastructure probelm in existance (or at leas
 ## Hazzards of the wrong relationship
 
 ## The ideal partner
-The ideal partner, in any relationship, adds value without forcing you to become dependant. With enterprise data partnerships this means enriching your data or simplifying a process, without taking control or ownership of your enterprise data. 
+The ideal partner, in any relationship, adds value without forcing you to become dependent. With enterprise data partnerships this means enriching your data or simplifying a process, without taking control or ownership of your enterprise data. 
 
-When done poorly, you can end up with a vendor that controls your data while tying you into an agreement that you can't get out of. This is common. This creates an additional silo where you can't access data outside of the tools provided to you. Remember that **you want data so that you can find uniquue ways to solve business problems**. I've personally seem many IT data strategies fail because they have been tied up in a system that controls their data for them. In most cases the only way to develop new capabilities is to open a support ticket or pay them to upgrade thier product. 
+When done poorly, you can end up with a vendor that controls your data while tying you into an agreement that you can't get out of. This is common. This creates an additional silo where you can't access data outside of the tools provided to you. Remember that **you want data so that you can find unique ways to solve business problems**. I've personally seen many IT data strategies fail because they have been tied up in a system that controls their data for them. In most cases the only way to develop new capabilities is to open a support ticket or pay them to upgrade thier product. 
 
-When you loose control of your data, you loose control of the pace and timing of inovation. Innovation becomes the thing that the vendor does, not you. And they will innovate at thier own schedule if they feel that it would be costly to migrate. 
+When you lose control of your data, you lose control of the pace and timing of inovation. Innovation becomes the thing that the vendor does, not you. And they will innovate at thier own schedule if they feel that it would be costly to migrate. 
 
 
 
