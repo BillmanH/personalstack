@@ -63,7 +63,7 @@ What to verify in the pitch meeting:
 * At some point they will show you a process to create "custom business logic". That part of the presentation will be brief and vague. Inquire further. The reason they aren't speaking to that process is because there are only ten people in the world who know how to do that part.
 * Can it use common, open-source frameworks? Even if it uses a framework that your team doesn't know, there will be resources like Stack Overflow, GitHub, and many other where the community has been active for years. 
 
-Pay attention vendors: It might be easier to leverage the common, open frameworks that people have been using for years. The version-control system isn't part of your core competency anyways. Better to just differ to the open conventions. If you create your own process you must support it, and that will take your energy away from what you do well. 
+Pay attention vendors: It might be easier to leverage the common, open frameworks that people have been using for years. The version-control system isn't part of your core competency anyways. Better to just differ to the open conventions. If you create your own process, you must support it, and that will take your energy away from what you do well. 
 
 
 # The ideal partner
@@ -81,3 +81,6 @@ Great examples of true partners: DataBricks, DBT Labs, Azure-ML. All of these ad
 * Designed to be part of an ecosystem, not the entire ecosystem. 
 
 
+## Conclusion
+
+At the enterprise level, third party tools are an important part of a data platform. ITDMs should review the features and understand what they bring to the table and what they take away. Think about the vendor you are listening to and try to understand how they fit into your infrastructure, and how they can help or hurt your ecosystem. 
