@@ -27,9 +27,10 @@ Here come vendors with those solutions.
 
 Vendors solve every kind of data infrastructure problem in existence (or at least offer to). 
 
-## Vendor Archtypes
+## Vendor Archetypes
 
 ### The End-to-End Solution
+Some vendors see themselves as the beginning and the end of data transformation. They are unaware of other systems or believe that there shouldn't be any other platforms than the one they are offering.
 
 ![default arch](../../docs/img/blog/thebigpartner.png?raw=true)
 
@@ -48,6 +49,21 @@ What to verify in the pitch meeting:
 * If you want to introduce another vendor to part of the solution. 
 
 
+### The Big Ego
+Sometimes the vendor has a competitive advantage in an area but isn't really focused on enterprise deployments. This is common in data science and analytics tools where the people at that end focus on visualization and insights but don't know much about enterprise engineering. 
+
+![default arch](../../docs/img/blog/the_big_ego.png?raw=true)
+
+The risk: You will spend much more time integrating this platform than you would a more conventional system.
+
+The ideal customer: The team that manages this tool doesn't have a lot of other systems to manage. The team that owns version control in this tool doesn't also manage your versioning tools in other areas, for example. 
+
+What to verify in the pitch meeting:
+* How does it manage version control?
+* At some point they will show you a process to create "custom business logic". That part of the presentation will be brief and vague. Inquire further. The reason they aren't speaking to that process is because there are only ten people in the world who know how to do that part.
+* Can it use common, open-source frameworks? Even if it uses a framework that your team doesn't know, there will be resources like Stack Overflow, GitHub, and many other where the community has been active for years. 
+
+Pay attention vendors: It might be easier to leverage the common, open frameworks that people have been using for years. The version-control system isn't part of your core competency anyways. Better to just differ to the open conventions. If you create your own process you must support it, and that will take your energy away from what you do well. 
 
 
 # The ideal partner
@@ -59,7 +75,9 @@ When done poorly, you can end up with a vendor that controls your data while tyi
 
 When you lose control of your data, you lose control of the pace and timing of innovation. Innovation becomes the thing that the vendor does, not you. And they will innovate at their own schedule if they feel that it would be costly to migrate. They control the direction and strategy, not you.
 
-
-
+Great examples of true partners: DataBricks, DBT Labs, Azure-ML. All of these add value-add tools to your data stack but take no control. Your data stays with you. You can use any cloud, or any combination of tools and it won't interrupt those services. They aren't greedy. Regardless of what you think about these platforms, they all have:
+* Use the SDK to operate from version control CICD pipelines.
+* Use the Web-UI to do your work, they will generate code that you can submit to conventional version control. 
+* Designed to be part of an ecosystem, not the entire ecosystem. 
 
 
