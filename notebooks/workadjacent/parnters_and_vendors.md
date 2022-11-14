@@ -46,7 +46,7 @@ What to verify in the pitch meeting:
 * Where does the data live?
 * Other than your amazing dashboard, what other APIs and tools exist to access data? 
 * Can you query the data itself, or just the pipelines that are provided to you? 
-* If you want to introduce another vendor to part of the solution. 
+
 
 
 ### The Big Ego
