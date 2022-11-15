@@ -13,7 +13,7 @@ A simplified model of your enterprise problems look like this:
 
 ![default arch](../../docs/img/blog/default.png?raw=true)
 
-This article isn't about infrastructure, it's about partners. So I'm deliberately brief. You have these three large capability areas. Your end goal is so that end users have access to the information that they need and are satisfied with how they get it. 
+This article isn't about infrastructure, it's about partners. I'm deliberately brief. You have these three large capability areas. Your end goal is so that end users have access to the information that they need and are satisfied with how they get it. 
 
 Vendors usually offer a solution to one or more of these problems:
 * getting data from somewhere
