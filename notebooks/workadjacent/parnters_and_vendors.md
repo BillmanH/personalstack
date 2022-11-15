@@ -9,11 +9,16 @@ If you are an IT Decision Maker (ITDM), this should help you think about the ven
 
 ## Your IT landscape
 
-In an oversimplification, your enterprise problems look like this:
+A simplified model of your enterprise problems look like this:
 
 ![default arch](../../docs/img/blog/default.png?raw=true)
 
-You have these three large capability areas. Your end goal is so that end users have access to the information that they need and are satisfied with how they get it. 
+This article isn't about infrastructure, it's about partners. So I'm deliberately brief. You have these three large capability areas. Your end goal is so that end users have access to the information that they need and are satisfied with how they get it. 
+
+Vendors usually offer a solution to one or more of these problems:
+* getting data from somewhere
+* having to transform or manipulate it in some way
+* having to develop reports, or better, distributing cleaned data to SMEs so that they can build the reports.
 
 However, while you do manage groups of IT engineers who manage your data platform, you aren't a software development company and don't plan to make this your focus. You want your teams to have the best tools in the industry, and the best quality data, without having to build everything from scratch yourself. 
 
@@ -66,7 +71,7 @@ What to verify in the pitch meeting:
 Pay attention vendors: It might be easier to leverage the common, open frameworks that people have been using for years. The version-control system isn't part of your core competency anyways. Better to just differ to the open conventions. If you create your own process, you must support it, and that will take your energy away from what you do well. 
 
 
-# The ideal partner
+### The focused partner
 The ideal partner, in any relationship, adds value without forcing you to become dependent. With enterprise data partnerships this means enriching your data or simplifying a process, without taking control or ownership of your enterprise data. 
 
 ![default arch](../../docs/img/blog/best_partner.png?raw=true)
