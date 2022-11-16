@@ -33,6 +33,7 @@ Here come vendors with those solutions.
 Vendors solve every kind of data infrastructure problem in existence (or at least offer to). 
 
 ## Vendor Archetypes
+You start to see some patterns after you've seen your hundredth vendor platform solution.
 
 ### The End-to-End Solution
 Some vendors see themselves as the beginning and the end of data transformation. They are unaware of other systems or believe that there shouldn't be any other platforms than the one they are offering.
@@ -65,16 +66,35 @@ The ideal customer: The team that manages this tool doesn't have a lot of other 
 
 What to verify in the pitch meeting:
 * How does it manage version control?
-* At some point they will show you a process to create "custom business logic". That part of the presentation will be brief and vague. Inquire further. The reason they aren't speaking to that process is because there are only ten people in the world who know how to do that part.
+* At some point they will show you a process to create "custom business logic". That part of the presentation will be brief and vague. Inquire further. The reason they aren't speaking to that process is because there are only ten people in the world who know how to do it.
 * Can it use common, open-source frameworks? Even if it uses a framework that your team doesn't know, there will be resources like Stack Overflow, GitHub, and many other where the community has been active for years. 
 
 Pay attention vendors: It might be easier to leverage the common, open frameworks that people have been using for years. The version-control system isn't part of your core competency anyways. Better to just differ to the open conventions. If you create your own process, you must support it, and that will take your energy away from what you do well. 
 
 
-### The focused partner
+### The Focused partner
 The ideal partner, in any relationship, adds value without forcing you to become dependent. With enterprise data partnerships this means enriching your data or simplifying a process, without taking control or ownership of your enterprise data. 
 
 ![default arch](../../docs/img/blog/best_partner.png?raw=true)
+
+The focused vendor has some key elements that I look for:
+* They assume you have a Data Platform that you will own. They want to add value to it, not take it away.
+* They focus on one thing that know better than anyone else. Everything else is standard open-source and connectors. 
+* The are confident that they fit inside of an ecosystem and not jealous of other vendors in your ecosystem.
+
+The risk: They sound like this in the pitch meeting but really aren't like this.
+
+What to verify in the pitch meeting:
+* Validate that the connectors and APIs exist and are not in roadmap. A roadmap is not a commitment to deliver.
+* Look at the SDKs and tools that run the platform. Do they match with the capabilities that your team already has? What will it cost to add the capabilities that you need?
+* Look at the beginning and the end of the product's scope. Do the ends of scope meet up with the beginning      of scope or another tool that you have? 
+    * If the scope of tools overlap, you will have repeated work.
+    * If they fall short, you will have a large manual process to connect them.
+
+
+
+## Conclusion
+
 
 When done poorly, you can end up with a vendor that controls your data while tying you into an agreement that you can't get out of. This is common. This creates an additional silo where you can't access data outside of the tools provided to you. Remember that **you want data so that you can find unique ways to solve business problems**. I've personally seen many IT data strategies fail because they have been tied up in a system that controls their data for them. In most cases the only way to develop new capabilities is to open a support ticket or pay them to upgrade their product. 
 
@@ -85,7 +105,5 @@ Great examples of true partners: DataBricks, DBT Labs, Azure-ML. All of these ad
 * Use the Web-UI to do your work, they will generate code that you can submit to conventional version control. 
 * Designed to be part of an ecosystem, not the entire ecosystem. 
 
-
-## Conclusion
 
 At the enterprise level, third party tools are an important part of a data platform. ITDMs should review the features and understand what they bring to the table and what they take away. Think about the vendor you are listening to and try to understand how they fit into your infrastructure, and how they can help or hurt your ecosystem. 
