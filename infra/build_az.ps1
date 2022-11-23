@@ -18,3 +18,5 @@ cd $Env:abspath
 # *_parameters are in the .gitignore 
 # Single turnkey resources from template. 
 az deployment group create --resource-group $resourceGroupName --template-file "infra/ARM/template.json" --parameters "infra/ARM/parameters.json"
+
+az deployment group create --resource-group $resourceGroupName --template-file "infra/ARM/storage_template.json" --parameters "infra/ARM/parameters.json"
