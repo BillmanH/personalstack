@@ -15,3 +15,27 @@ The tools in this repo are used in my home office, aka 'The Command Center'. I'm
 * End to end
 
 
+# Create the `personalstack` env
+
+create with the `env.yaml` file:
+```
+conda env create -f env.yml
+```
+
+# Local environment variables
+Create an `ev-vars.json` file in the `infra` folder. It will be used for many different purposes and will be used to keep your secrets as a document. It should have this format:
+
+```
+{
+    "subscription": ""***",
+    "AZURE_STORAGE_KEY": ""***",
+    "AZURE_ACCOUNT_NAME": ""***",
+    "AZURE_STATIC_CONTAINER": "***",
+    "AZURE_DIGITAL_TWIN_NAME": "**"
+    ...
+}
+```
+run the `configure_env.py` to load the variables from the json to the env. 
+
+
+
