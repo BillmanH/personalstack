@@ -35,7 +35,7 @@ Create an `ev-vars.json` file in the `infra` folder. It will be used for many di
     ...
 }
 ```
-run the `configure_env.py` to load the variables from the json to the env. 
 
+run the script in `setting_local-env_vars.ps1` to set that json.
 
 
