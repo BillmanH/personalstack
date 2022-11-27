@@ -23,3 +23,4 @@ az deployment group create --resource-group $resourceGroupName --template-file "
 # Create a CORS 
 # This should be in the ARM Template.
 # az storage cors add --services b --methods GET OPTIONS POST PUT --origins https://explorer.digitaltwins.azure.net --allowed-headers Authorization x-ms-version x-ms-blob-type --account-name atdstoragebillmanh
+
