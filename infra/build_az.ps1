@@ -17,6 +17,9 @@ cd $Env:abspath
 
 # *_parameters are in the .gitignore 
 # Single turnkey resources from template. 
-$output = az deployment group create --resource-group $resourceGroupName --template-file "infra/ARM/template.json" --parameters "infra/ARM/parameters.json" | ConvertFrom-Json
+az deployment group create --resource-group $resourceGroupName --template-file "infra/ARM/template.json" --parameters "infra/ARM/parameters.json"
 
 
+# Create a CORS 
+# This should be in the ARM Template.
+# az storage cors add --services b --methods GET OPTIONS POST PUT --origins https://explorer.digitaltwins.azure.net --allowed-headers Authorization x-ms-version x-ms-blob-type --account-name atdstoragebillmanh
